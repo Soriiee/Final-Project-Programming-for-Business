@@ -1,0 +1,91 @@
+/* GLOBAL RESET & FONT */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212; /* Background Utama Gelap */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration: none; transition: 0.2s; }
+
+/* NAVBAR */
+.navbar {
+    background-color: #1f1f1f; /* Sedikit lebih terang dari body */
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d00000; /* Garis merah aksen */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.menu { display: flex; gap: 20px; align-items: center; }
+.menu a { color: #ccc; font-weight: 500; font-size: 14px; }
+.menu a:hover { color: white; }
+
+/* CONTAINER BOX (Untuk Form & Tabel) */
+.container, .box-container {
+    background-color: #1f1f1f; /* Warna kartu/kotak */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* Bayangan lembut */
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 900px; /* Lebar standar */
+    border: 1px solid #333;
+}
+
+/* FORM INPUTS (Penting biar gak putih jelek) */
+input, textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 20px 0;
+    background-color: #2b2b2b; /* Input abu gelap */
+    border: 1px solid #444;
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+input:focus, textarea:focus {
+    border-color: #d00000; /* Fokus jadi merah */
+    outline: none;
+    background-color: #333;
+}
+
+/* TOMBOL */
+button, .btn-big, .btn-add, .btn-login {
+    background-color: #d00000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+}
+button:hover, .btn-big:hover, .btn-add:hover, .btn-login:hover {
+    background-color: #ff1a1a;
+    transform: translateY(-2px);
+}
+
+/* TABEL INVENTORY (Biar Rapi) */
+table { width: 100%; border-collapse: separate; border-spacing: 0 10px; margin-top: 10px; }
+th { text-align: left; padding: 15px; color: #888; font-size: 13px; text-transform: uppercase; border-bottom: 1px solid #333; }
+td { background-color: #262626; padding: 15px; vertical-align: middle; border-top: 1px solid #333; border-bottom: 1px solid #333; }
+td:first-child { border-left: 1px solid #333; border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+td:last-child { border-right: 1px solid #333; border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+/* Status Badge */
+.badge { padding: 5px 12px; border-radius: 20px; font-size: 11px; font-weight: bold; letter-spacing: 0.5px; }
+.bg-available { background: rgba(40, 167, 69, 0.2); color: #28a745; border: 1px solid #28a745; }
+.bg-sold { background: rgba(220, 53, 69, 0.2); color: #dc3545; border: 1px solid #dc3545; }
+
+/* Grid Produk (Index) */
+.container-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 25px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.card { background: #1f1f1f; border-radius: 12px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
+.card:hover { border-color: #d00000; transform: translateY(-5px); }
+.card-img { width: 100%; height: 300px; object-fit: contain; background: #252525; border-bottom: 1px solid #333; }
+.card-body { padding: 20px; }
