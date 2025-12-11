@@ -85,7 +85,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'admin', 'admin@test.com', '$2y$10$YourHashHereIsJustExample'),
 (2, 'JodarAdmin', 'test@gmail.com', '$2y$10$5SS6op9RN.zwFv.imutcpObF9GqlSf7P9Ou7gQj4WSi7neRxmkZOS');
 
 --
